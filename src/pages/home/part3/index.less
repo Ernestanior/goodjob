@@ -1,0 +1,74 @@
+.home-function-conatiner{
+    position: relative;
+    margin-top: 50px;
+    height: 500px;
+    background-image: url('./bg1.png');
+    background-size:cover; /* Adjusts the size to cover the entire container */
+    background-repeat: no-repeat; /* Prevents the GIF from repeating */
+    background-position:center; 
+    .mask{
+        background-color: #0d55d2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 440px;
+        padding: 30px;
+        opacity: .85;
+    }
+    .content{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding:30px 50px;
+        .sub-title{
+            color: #fff;
+            font-size: 14px;
+            margin-top: -10px;
+        }
+    }
+    .item-container{
+        margin-top: 40px;
+        .item{
+            .item-label{
+                color: #fff;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+                .item-icon{
+                    font-size: 30px;
+                }
+            }
+            .item-content{
+                margin-top: 12px;
+                color: #fff;
+                .item-content-row{
+                    font-size: 12px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1000px) {
+    .home-function-conatiner{
+        .item-container{
+            .item{
+                .item-label{
+                    font-size: 12px;
+                    .item-icon{
+                        font-size: 18px;
+                    }
+                }
+                .item-content{
+                    .item-content-row{
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+    
+    }
+}

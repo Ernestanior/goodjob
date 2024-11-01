@@ -1,0 +1,50 @@
+
+.nav-container{
+        width: 70vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 1.4vw;
+            .logo{
+                width: 70px;
+                height: 50px;
+                border-radius: 10px;
+            }
+            .logo-name{
+                color:#fff;
+                margin-left: 10px;
+            }
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            padding-right: 100px;
+            .btn{
+                border: 1px solid #dddddd;
+                color:#fff;
+                font-weight: 700;
+            }
+            .dropdown{
+                margin-left: 20px;
+                color:#fff;
+                font-weight: 700;
+                cursor: pointer;
+                padding-bottom: 5px;
+            }
+        }
+        
+    }
+
+
+@media screen and (max-width:800px) {
+        .row{
+            .left{
+                display: none;
+            }
+        }
+
+}
