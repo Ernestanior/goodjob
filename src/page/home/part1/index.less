@@ -1,0 +1,54 @@
+.home-screen-container{
+    width: 100%;
+    height: 500px;
+    min-width: 500px;
+    background-image: url('./1.jpg');
+    background-size: cover; /* Adjusts the size to cover the entire container */
+    background-repeat: no-repeat; /* Prevents the GIF from repeating */
+    background-position:center; 
+    position: relative;
+    .mask{
+        background: linear-gradient(to right, #ffffff, #a4afd1);
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 400px;
+        opacity: .75;
+        padding: 50px 0;
+
+    }
+    .logo{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 110px;
+        height: 70px;
+    }
+    .home-screen-content{
+        width: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        .title{
+            font-size: 25px;
+            margin: 0;
+            text-align: center;
+            color:#1f4d9b;
+
+        }
+
+    }
+}
+@media screen and (max-width:1000px) {
+    .home-screen-container{
+        height: 400px;
+        .mask{
+            height: 300px;
+
+        }
+
+    }
+}

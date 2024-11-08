@@ -1,0 +1,55 @@
+
+.nav-container{
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            .logo{
+                width: 70px;
+                height: 50px;
+                border-radius: 10px;
+            }
+            .logo-name{
+                color:#fff;
+                margin-left: 10px;
+            }
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            .btn{
+                border: 1px solid #dddddd;
+                color:#fff;
+                font-weight: 700;
+            }
+            .dropdown{
+                margin-left: 20px;
+                color:#fff;
+                font-weight: 700;
+                cursor: pointer;
+                padding-bottom: 5px;
+            }
+        }
+        
+    }
+
+
+@media screen and (max-width:800px) {
+    .nav-container{
+        .right{
+            .btn{
+                display: none;
+
+            }
+            }
+        }
+
+}
